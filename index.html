@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Share Quality</title>
+    <style>
+        /* Estilos para alinhar os formulários lado a lado */
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .form-container {
+            margin: 20px;
+        }
+        form {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pixel Share Quality</h1>
+    <div class="container">
+        <div class="form-container">
+            <h2>Envio de Arquivos</h2>
+            <form action="teste.php" method="post" enctype="multipart/form-data">
+                <label for="email_destinatario">E-mail do Destinatário:</label>
+                <input type="email" id="email_destinatario" name="email_destinatario" required><br><br>
+                <label for="nome_destinatario">Nome do Destinatário:</label>
+                <input type="text" id="nome_destinatario" name="nome_destinatario" required><br><br>
+                <label for="email_remetente">Seu E-mail:</label>
+                <input type="email" id="email_remetente" name="email_remetente" required><br><br>
+                <label for="id_usuario">ID do Usuário:</label>
+                <input type="text" id="id_usuario" name="id_usuario" required><br><br>
+                Selecione o arquivo:
+                <input type="file" name="fileToUpload" id="fileToUpload" required><br><br>
+                <input type="submit" value="Enviar Arquivo" name="submit">
+            </form>
+        </div>
+        <div class="form-container">
+            <h2>Cadastro de Usuário</h2>
+            
+
+    <h2>Cadastro de Usuário</h2>
+    <form action="teste.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+
+</body>
+</html>
